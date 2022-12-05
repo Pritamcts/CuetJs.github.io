@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CueteJsProject</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: #f4ead5;
+      }
+      h1 {
+        text-align: center;
+        color: #e86464;
+      }
+      #im-1 {
+        height: 200px;
+        display: flex;
+        margin-top: 50px;
+        margin-left: 650px;
+      }
+      #by {
+        /* margin: 80px; */
+        /* margin-left: 180px; */
+        background: #e86464;
+        cursor: pointer;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border: none;
+        border-radius: 5px;
+        position: absolute;
+        left: 370px;
+        top: 400px;
+        /* height: 150px;
+        width: 50px; */
+        font-size: medium;
+      }
+      #bn {
+        /* margin-top: 150px; */
+        cursor: pointer;
+        background: #e86464;
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-radius: 5px;
+        border: none;
+        position: absolute;
+        top: 400px;
+        left: 750px;
+        font-size: medium;
+      }
+      .main {
+        margin-left: 350px;
+      }
+    </style>
+    <script>
+      const buttonHeight=50;
+      const buttonWidth=150;
+      const maxWidth=window.innerWidth-buttonWidth;
+      const maxHeight=window.innerHeight-buttonHeight;
+      const f1=()=>{
+          alert("YEHH THANK YOUU LOVE YOUUU > <")
+         
+      }
+  
+      window.addEventListener('DOMContentLoaded',()=>{
+          const button=document.getElementById('by');
+          button.addEventListener('click',()=> alert("You clicked me"))
+          button.addEventListener('mouseover',()=>{
+              button.style.left=Math.floor(Math.random() * (maxWidth+1)) + 'px';
+              button.style.top=Math.floor(Math.random()  * (maxHeight+1)) + 'px';
+             
+          })
+      });
+      // function a1(){
+      // const audio=new Audio('https://www.youtube.com/watch?v=KZZiJJWXEGg');
+      // audio.play();
+      // }
+     
+    </script>
+  </head>
+
+  <body>
+    <audio  autoplay loop>
+      <source src="new.mp3" type="audio/mp3">
+    </audio>
+    <h1>Can we hang out sometime???😚😚</h1>
+    <div id="im-1">
+      <img src="https://media.tenor.com/CjlhwCXmOSgAAAAi/marsey-drama.gif" />
+    </div>
+    <div class="main">
+      <!--  <input id="by" type="button" value="Nooo😠">
+  <input id="bn" type="button" value="Yes Babyy😘" onclick="f1()"> -->
+      <button id="by">Noooo😠😠</button>
+      <button id="bn" onclick="f1()">Yess babyyyy😘😘</button>
+    </div>
+  </body>
+  
+</html>
